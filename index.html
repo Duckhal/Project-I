@@ -1,0 +1,88 @@
+<!--Hoàng Đức Khải - 20225341 - Project I-->
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Graph Calculation</title>
+      <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="websitepp">
+          <h1 style="color: whitesmoke;">Graph Calculation</h1>
+        </div>
+        <div class="subcontainer">
+          <!-- Góc thư giãn -->
+          <section class="relaxation">
+            <div class="vibing">Góc thư giãn</div>
+            <div class="music">
+              <p>Nghe ít nhạc thư giãn nhé mọi người 	&#x2764;</p>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/ErMz2iLLm4w" title="밤의 피아노곡(Melody of the night) - 시진(石进) | 피아노" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="pics">
+              <img src="Chilling.png" alt="Just Chilling" style="width: 250px; height: 250px;">
+            </div>
+          </section>
+      
+          <!-- Chức năng chính -->
+          <section class="main">
+              <div class="maintitle">
+                  <h2>Main Menu</h2>
+              </div>
+              <div class="inputbox">
+                  <textarea class="inputdata" placeholder="Nhập dữ liệu đồ thị..."></textarea>
+              </div>
+              <div class="mainmenu">
+                  <button class="feature1">
+                      <h2>Chu trình Hamilton</h2>
+                      <p>Chứng minh 1 đồ thị là đồ thị Hamilton</p>
+                      <p>Đưa ra 1 chu trình Hamilton của đồ thị</p>
+                    </button>
+                  <button class="feature2">
+                      <h2>Thành phần liên thông</h2>
+                      <p>Tìm các thành phần liên thông của đồ thị</p>
+                      <p>Đưa ra kết quả thành phần liên thông</p>
+                  </button>
+                  <button class="feature3">
+                      <h2>Tìm đường đi ngắn nhất giữa đỉnh
+                         <input type="text" class="dinh_bat_dau" id="dinh1">
+                         và
+                         <input type="text" class="dinh_ket_thuc" id="dinh2"></h2>
+                  </button>
+              </div>
+              <div class="outputbox">
+                <textarea class="outputdata" placeholder="Kết quả sẽ hiển thị tại đây..."></textarea>
+              </div>
+          </section>
+      
+          <!-- Thông báo -->
+          <aside class="notifications">
+              <h3>Thông báo</h3>
+              <p>Tài liệu tham khảo</p>
+              <div class="chucnangweb">
+                <div class="mode1"><a href="https://viblo.asia/p/do-thi-hamilton-va-chu-trinh-hamilton-Ljy5V393Kra" target="_blank">&#9679; Chu trình Hamilton là gì?</a></div>
+                <div class="mode2"><a href="https://vi.wikipedia.org/wiki/Th%C3%A0nh_ph%E1%BA%A7n_li%C3%AAn_th%C3%B4ng" target="_blank">&#9679; Thành phần liên thông là gì?</a></div>
+                <div class="mode3"><a href="https://viblo.asia/p/thuat-toan-dijkstra-va-ung-dung-aWj53zgQl6m" target="_blank">&#9679; Thuật toán Dijikstra tìm đường đi ngắn nhất giữa 2 đỉnh</a></div>
+              </div>
+              <div class="huongdansudung">
+                <h3 style="text-align: center;">Hướng dẫn sử dụng</h3>
+                <p style="text-align: center;">Nhập dữ liệu</p>
+                <p><b>Dòng 1:</b> x y</p>
+                <p>x: Số lượng đỉnh.</p>
+                <p>y: Sô lượng cạnh.</p>
+                <p><b>Các dòng tiếp theo:</b> u v w</p>
+                <p>u: Đỉnh thứ nhất của cạnh.</p>
+                <p>v: Đỉnh thứ hai của cạnh.</p>
+                <p>w: Trọng số (dương) giữa 2 đỉnh.</p>
+                <h3 style="text-align: center;">Lưu ý</h3>
+                <p>Nếu dữ liệu quá lớn có thể khiến web hoạt động chậm hoặc không đúng với mong muốn.</p>
+                <p>Bạn có thể không nhập trọng số w, khi đó w sẽ được gán bằng 1.</p>
+              </div>
+          </aside>
+        </div>
+      </div>
+      <script src="script1.js"></script>
+    </body>
+    </html>
+    
